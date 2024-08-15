@@ -16,21 +16,21 @@ import 'swiper/css/autoplay';
 
 const HeroSlider = () => {
   return (
-    <div>
+    <div className='h-full w-full'>
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
         spaceBetween={50}
         slidesPerView={1}
         navigation
-        loop={true}
-        autoplay={{ delay: 2000 }}
+        // loop={true}
+        // autoplay={{ delay: 2000 }}
         pagination={{ clickable: true }}
       >
         {[hero1, hero2, hero3, hero4, hero5, hero6].map((hero, index) => (
-          <SwiperSlide key={index}>
+          <SwiperSlide key={index} className='h-full'>
             <div className="group overflow-hidden rounded-2xl">
               <Image
-                className="aspect-[1.2] max-h-[600px] rounded-2xl object-cover transform transition-transform duration-1000 ease-in-out group-hover:scale-150"
+                className="block aspect-[1.2] w-full h-full rounded-2xl object-cover transform transition-transform duration-1000 ease-in-out group-hover:scale-150"
                 src={hero}
                 width={800}
                 height={800}
