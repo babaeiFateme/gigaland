@@ -45,6 +45,11 @@ const config: Config = {
       },
     },
   },
+  variants: {
+    extend: {
+      scale: ['group-hover'],
+    },
+  },
   plugins: [],
 };
 export default config;
