@@ -5,7 +5,7 @@ import news3 from "@/public/images/landing/blogs/news-b3.jpg"
 const LastBlogs = () => {
     return (
         <>
-            <h2>Latest News</h2>
+            <h2 className='text-white font-bold text-xl my-[40px]'>Latest News</h2>
             <div className="grid gap-[10px] md:gap-[30px] grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 <div className="">
                     <Image
