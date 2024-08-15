@@ -2,14 +2,14 @@ import HeroSlider from "./HeroSlider"
 
 const Hero = () => {
     return (
-        <div className="p-[10px] md:p-[20px] gap-[20px]  bg-primary-600 text-white container mx-auto rounded-xl mb-[40px]">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
+        <div className="p-[10px] md:p-[20px] lg:p-[30px] gap-[10px] md:gap-[20px]  bg-primary-600 text-white container mx-auto rounded-xl mb-[40px]">
+            <div className="grid grid-cols-1 xl:grid-cols-2 gap-20">
                 <div className="py-[30px] px-[50px]">
                     <div>
                         <h1 className="text-2xl md:text-4xl font-bold">
                             Explore, collect, and sell extraordinary
                         </h1>
-                        <span className="text-2xl md:text-4xl font-bold">
+                        <span className="text-2xl md:text-4xl font-bold text-gradient">
                             NFTs
                         </span>
                     </div>
