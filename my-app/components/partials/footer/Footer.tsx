@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <footer>
             <div className="container mx-auto">
-                <div className="grid grid-cols-7 gap-20 text-white py-[40px]">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-7 gap-20 text-white py-[40px]">
                     <div className="col-span-2">
                         <div className='mb-5 text-white text-xl font-bold'>Get the latest updates</div>
                         <div className=' text-gray-600 font-bold'>Signup for our newsletter to get the latest updates in your inbox.</div>
@@ -37,7 +37,7 @@ const Footer = () => {
                     </div>
 
                     <div className='col-span-1'>
-                        <div>
+                        <div className='mb-8 text-xl'>
                             Resources
                         </div>
                         <ul>
@@ -62,7 +62,7 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div className='col-span-1'>
-                        <div>
+                        <div className='mb-8 text-xl'>
                             Community
                         </div>
                         <ul>
@@ -88,7 +88,7 @@ const Footer = () => {
                     </div>
 
                     <div className='col-span-2'>
-                        <div>Join the community</div>
+                        <div className='mb-8 text-xl'>Join the community</div>
                     </div>
                 </div>
             </div>
