@@ -12,3 +12,11 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.btn-gradient {
+    background: linear-gradient(
+        to right,
+        #797ef6 0%,
+        #1aa7ec 100%
+    );
+}
