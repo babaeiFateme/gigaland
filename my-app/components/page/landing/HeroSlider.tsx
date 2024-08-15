@@ -22,8 +22,8 @@ const HeroSlider = () => {
         spaceBetween={50}
         slidesPerView={1}
         navigation
-        // loop={true}
-        // autoplay={{ delay: 2000 }}
+        loop={true}
+        autoplay={{ delay: 2000 }}
         pagination={{ clickable: true }}
       >
         {[hero1, hero2, hero3, hero4, hero5, hero6].map((hero, index) => (

@@ -3,6 +3,8 @@ import Hero from "@/components/page/landing/Hero";
 
 import LastBlogs from "@/components/page/landing/LastBlogs";
 import PopularCategories from "@/components/page/landing/PopularCategories";
+import ShareApp from "@/components/page/landing/shareApp";
+
 
 
 export default function Home() {
@@ -12,6 +14,7 @@ export default function Home() {
       <Brand />
       <PopularCategories />
       <LastBlogs />
+      <ShareApp />
     </main>
   );
 }

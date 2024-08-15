@@ -19,3 +19,32 @@
 .swiper {
     height: 100% !important;
 }
+.backgroundContainer {
+    @apply w-full h-[150px] overflow-hidden relative my-10;
+}
+
+.background {
+    @apply absolute w-full h-full bg-cover bg-center;
+    background-image: url("/images/landing/24.jpg");
+    animation: moveBackground 10s linear infinite;
+}
+.background::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.341);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+@keyframes moveBackground {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 0 50%;
+    }
+    100% {
+        background-position: 0 100%;
+    }
+}
