@@ -4,6 +4,7 @@ import Hero from "@/components/page/landing/Hero";
 import LastBlogs from "@/components/page/landing/LastBlogs";
 import PopularCategories from "@/components/page/landing/PopularCategories";
 import ShareApp from "@/components/page/landing/shareApp";
+import TradingNtfs from "@/components/page/landing/TradingNtfs";
 
 
 
@@ -13,6 +14,7 @@ export default function Home() {
       <Hero />
       <Brand />
       <PopularCategories />
+      <TradingNtfs/>
       <LastBlogs />
       <ShareApp />
     </main>
