@@ -1,6 +1,8 @@
+import HeroSlider from "./HeroSlider"
+
 const Hero = () => {
     return (
-        <div className="p-[10px] md:p-[20px] gap-[20px] bg-primary-600 text-white container mx-auto rounded-xl mb-[40px]">
+        <div className="p-[10px] md:p-[20px] gap-[20px]  bg-primary-600 text-white container mx-auto rounded-xl mb-[40px]">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
                 <div className="py-[30px] px-[50px]">
                     <div>
@@ -19,6 +21,7 @@ const Hero = () => {
                         <button type="button" className="text-white bg-primary-500 py-3 px-10 rounded-lg">Sell</button>
                     </div>
                 </div>
+                <HeroSlider />
             </div>
         </div>
     )
