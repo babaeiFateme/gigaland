@@ -12,7 +12,7 @@ import TradingNtfs from "@/components/page/landing/TradingNtfs";
 
 export default function Home() {
   return (
-    <main className=" min-h-screen mx-auto p-10 sm:p-16 lg:p-24 lg:pt-10">
+    <main className=" min-h-screen mx-auto p-10 sm:p-16 lg:p-24 lg:pt-36">
       <Hero />
       <Brand />
       <TopSeller />

@@ -14,20 +14,20 @@ const Header = () => {
     ];
 
     return (
-        <nav className="text-white container mx-auto flex justify-between items-center px-10 sm:px-20">
-            <button  type="button" className="flex justify-start sm:hidden " >
+        <nav className="text-white fixed top-0 py-4 bg-primary-950 z-50 w-full mx-auto flex justify-between items-center px-[26px] lg:px-20">
+            <button  type="button" className="flex justify-start lg:hidden " >
                 <LuAlignJustify className="text-white text-lg font-bold" />
             </button>
 
-            <div className="sm:hidden pr-3 justify-between flex">
-                <div>
+            <div className="lg:hidden pr-3 justify-between flex">
+                <div className="flex gap-2 items-center">
                     <Image src={AcmeLogo} alt="rayka" width={40} height={40} />
-                    <p className="font-bold text-inherit">ACME</p>
+                    <span className="font-bold text-inherit">ACME</span>
                 </div>
             </div>
 
-            <div className="hidden sm:block container mx-auto">
-                <div className="hidden sm:flex flex-wrap gap-4 justify-between container mx-auto">
+            <div className="hidden lg:block container mx-auto">
+                <div className="hidden lg:flex gap-4 justify-between container mx-auto">
                     <div className="flex gap-[20px] items-center">
                         <div>
                             <Image src={AcmeLogo} alt="rayka" width={40} height={40} />

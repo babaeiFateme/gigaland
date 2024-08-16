@@ -27,24 +27,19 @@ const TradingNtfs = () => {
                 spaceBetween={30}
                 slidesPerView={4}
                 breakpoints={{
-                    375: {
-                        // width: 576,
+                    0: {
                         slidesPerView: 1,
                     },
                     576: {
-                        // width: 576,
                         slidesPerView: 2,
                     },
                     768: {
-                        // width: 768,
                         slidesPerView: 2,
                     },
                     992: {
-                        // width: 768,
                         slidesPerView: 3,
                     },
                     1024: {
-                        // width: 768,
                         slidesPerView: 4,
                     },
                 }}
@@ -54,7 +49,7 @@ const TradingNtfs = () => {
             >
                 <SwiperSlide className='h-full'>
                     <div className='group pt-10 pb-4 px-4 bg-primary-950 rounded-xl relative'>
-                        <div className=" overflow-hidden rounded-2xl">
+                        <div className="overflow-hidden rounded-2xl">
                             <Image
                                 className="block aspect-[1.2] rounded-2xl object-cover transform transition-transform duration-1000 ease-in-out group-hover:scale-150"
                                 src={trade1}
