@@ -26,10 +26,31 @@ const TradingNtfs = () => {
                 modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
                 spaceBetween={30}
                 slidesPerView={4}
-                
+                breakpoints={{
+                    375: {
+                        // width: 576,
+                        slidesPerView: 1,
+                    },
+                    576: {
+                        // width: 576,
+                        slidesPerView: 2,
+                    },
+                    768: {
+                        // width: 768,
+                        slidesPerView: 2,
+                    },
+                    992: {
+                        // width: 768,
+                        slidesPerView: 3,
+                    },
+                    1024: {
+                        // width: 768,
+                        slidesPerView: 4,
+                    },
+                }}
                 navigation
                 loop={true}
-                
+
             >
                 <SwiperSlide className='h-full'>
                     <div className='group pt-10 pb-4 px-4 bg-primary-950 rounded-xl relative'>
@@ -43,7 +64,7 @@ const TradingNtfs = () => {
                             />
                         </div>
                         <div className='absolute top-4 left-3 hover:border-2 hover:border-red rounded-full group'>
-                            <Image className='rounded-full transform transition-transform duration-1000 ease-in-out group-hover:scale-[0.9]' src={author2} width={50} height={50} alt='author'/>
+                            <Image className='rounded-full transform transition-transform duration-1000 ease-in-out group-hover:scale-[0.9]' src={author2} width={50} height={50} alt='author' />
                         </div>
                         <div className='my-3'>
                             <div className='flex gap-2 items-center justify-between mb-2'>
@@ -80,7 +101,7 @@ const TradingNtfs = () => {
                             />
                         </div>
                         <div className='absolute top-4 left-3 hover:border-2 hover:border-red rounded-full group'>
-                            <Image className='rounded-full transform transition-transform duration-1000 ease-in-out group-hover:scale-[0.9]' src={author1} width={50} height={50} alt='author'/>
+                            <Image className='rounded-full transform transition-transform duration-1000 ease-in-out group-hover:scale-[0.9]' src={author1} width={50} height={50} alt='author' />
                         </div>
                         <div className='my-3'>
                             <div className='flex gap-2 items-center justify-between mb-2'>
@@ -117,7 +138,7 @@ const TradingNtfs = () => {
                             />
                         </div>
                         <div className='absolute top-4 left-3 hover:border-2 hover:border-red rounded-full group'>
-                            <Image className='rounded-full transform transition-transform duration-1000 ease-in-out group-hover:scale-[0.9]' src={author1} width={50} height={50} alt='author'/>
+                            <Image className='rounded-full transform transition-transform duration-1000 ease-in-out group-hover:scale-[0.9]' src={author1} width={50} height={50} alt='author' />
                         </div>
                         <div className='my-3'>
                             <div className='flex gap-2 items-center justify-between mb-2'>
@@ -154,7 +175,7 @@ const TradingNtfs = () => {
                             />
                         </div>
                         <div className='absolute top-4 left-3 hover:border-2 hover:border-red rounded-full group'>
-                            <Image className='rounded-full transform transition-transform duration-1000 ease-in-out group-hover:scale-[0.9]' src={author1} width={50} height={50} alt='author'/>
+                            <Image className='rounded-full transform transition-transform duration-1000 ease-in-out group-hover:scale-[0.9]' src={author1} width={50} height={50} alt='author' />
                         </div>
                         <div className='my-3'>
                             <div className='flex gap-2 items-center justify-between mb-2'>
@@ -191,7 +212,7 @@ const TradingNtfs = () => {
                             />
                         </div>
                         <div className='absolute top-4 left-3 hover:border-2 hover:border-red rounded-full group'>
-                            <Image className='rounded-full transform transition-transform duration-1000 ease-in-out group-hover:scale-[0.9]' src={author1} width={50} height={50} alt='author'/>
+                            <Image className='rounded-full transform transition-transform duration-1000 ease-in-out group-hover:scale-[0.9]' src={author1} width={50} height={50} alt='author' />
                         </div>
                         <div className='my-3'>
                             <div className='flex gap-2 items-center justify-between mb-2'>
@@ -228,7 +249,7 @@ const TradingNtfs = () => {
                             />
                         </div>
                         <div className='absolute top-4 left-3 hover:border-2 hover:border-red rounded-full group'>
-                            <Image className='rounded-full transform transition-transform duration-1000 ease-in-out group-hover:scale-[0.9]' src={author1} width={50} height={50} alt='author'/>
+                            <Image className='rounded-full transform transition-transform duration-1000 ease-in-out group-hover:scale-[0.9]' src={author1} width={50} height={50} alt='author' />
                         </div>
                         <div className='my-3'>
                             <div className='flex gap-2 items-center justify-between mb-2'>
@@ -255,7 +276,7 @@ const TradingNtfs = () => {
                 </SwiperSlide>
 
             </Swiper>
-        </div>
+        </div >
     )
 }
 
