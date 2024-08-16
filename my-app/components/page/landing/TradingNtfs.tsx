@@ -26,8 +26,10 @@ const TradingNtfs = () => {
                 modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
                 spaceBetween={30}
                 slidesPerView={4}
+                
                 navigation
                 loop={true}
+                
             >
                 <SwiperSlide className='h-full'>
                     <div className='group pt-10 pb-4 px-4 bg-primary-950 rounded-xl relative'>

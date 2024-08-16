@@ -3,7 +3,9 @@ import Hero from "@/components/page/landing/Hero";
 
 import LastBlogs from "@/components/page/landing/LastBlogs";
 import PopularCategories from "@/components/page/landing/PopularCategories";
-import ShareApp from "@/components/page/landing/shareApp";
+import ShareApp from "@/components/page/landing/ShareApp";
+
+import TopSeller from "@/components/page/landing/TopSeller";
 import TradingNtfs from "@/components/page/landing/TradingNtfs";
 
 
@@ -13,8 +15,9 @@ export default function Home() {
     <main className=" min-h-screen mx-auto p-10 sm:p-16 lg:p-24">
       <Hero />
       <Brand />
+      <TopSeller />
+      <TradingNtfs />
       <PopularCategories />
-      <TradingNtfs/>
       <LastBlogs />
       <ShareApp />
     </main>
