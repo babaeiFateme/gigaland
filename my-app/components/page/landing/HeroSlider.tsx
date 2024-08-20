@@ -23,7 +23,7 @@ const HeroSlider = () => {
         slidesPerView={1}
         navigation
         loop={true}
-      // autoplay={{ delay: 4000 }}
+      autoplay={{ delay: 4000 }}
       // pagination={{ clickable: true }}
       >
         {[hero1, hero2, hero3, hero4, hero5, hero6].map((hero, index) => (
@@ -37,8 +37,8 @@ const HeroSlider = () => {
                 <Image
                   className="block aspect-[1.2] w-full h-full rounded-2xl object-cover ease-in-out"
                   src={hero}
-                  width={800}
-                  height={800}
+                  width={1000}
+                  height={1000}
                   alt={`Hero ${index + 1}`}
                 />
               </motion.div>

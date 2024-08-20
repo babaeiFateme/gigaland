@@ -35,12 +35,12 @@ const Header = () => {
             <div className="hidden lg:block container mx-auto">
                 <div className="hidden lg:flex gap-4 justify-between container mx-auto">
                     <div className="flex gap-[20px] items-center">
-                        <div>
+                        <div className="flex gap-2 items-center">
                             <Image src={AcmeLogo} alt="rayka" width={40} height={40} />
                             <span className="font-bold text-inherit">ACME</span>
                         </div>
                         <div>
-                            <input type="text" />
+                            <input type="text" placeholder="search item here..." className="placeholder:text-white placeholder:text-sm bg-lightGlass min-h-[30px] w-full max-w-[400px] px-2 py-2 rounded-md focus:border-0 active:border-0 focus-visible:border-0 focus-visible:outline-none" />
                         </div>
                     </div>
                     <ul className="flex gap-[20px] items-center">

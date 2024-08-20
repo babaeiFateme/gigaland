@@ -10,6 +10,7 @@ const config: Config = {
     colors: {
       transparent: 'transparent',
       white: '#ffffff',
+      lightGlass:'#fffff111',
       primary: {
         100: '#cffafe',
         200: '#a5f3fc',
