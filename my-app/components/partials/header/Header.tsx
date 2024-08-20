@@ -47,7 +47,7 @@ const Header = () => {
                         {menuItems.map((item, index) => (
                             <li key={`${item}-${index}`}>
                                 <Link
-                                    className="w-full"
+                                    className="relative w-full before:content-normal before:absolute before:-bottom-3 before:h-[3px] transition duration-1000 before:transition-all before:duration-1000 before:left-0 before:bg-primary-300 before:w-0 before:block hover:before:w-full"
                                     color={
                                         index === 2 ? "warning" : index === menuItems.length - 1 ? "danger" : "foreground"
                                     }

@@ -9,7 +9,7 @@ import brand6 from "@/public/images/landing/6.png"
 const Brand = () => {
     return (
         <div className="container mx-auto">
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-[20px]">
+            <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-[20px]">
                 <div className="p-[10px] md:p-[20px] lg:p-[30px] bg-primary-850 hover:bg-primary-600 flex flex-col items-center justify-center gap-2 rounded-xl brand-card">
                     <Image
                         src={brand1}
