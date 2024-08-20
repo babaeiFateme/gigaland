@@ -117,12 +117,18 @@
     background-color: #fff;
     display: none !important;
 }
-.swiper:hover .swiper-button-next , .swiper:hover .swiper-button-prev {
+.swiper:hover .swiper-button-next,
+.swiper:hover .swiper-button-prev {
     display: flex !important;
 }
 .swiper-button-next::after,
-.swiper-button-prev::after{
-    transform:  scale(.4);
+.swiper-button-prev::after {
+    transform: scale(0.4);
     font-weight: 700;
     color: #000;
 }
+
+.counter {
+    background-image: linear-gradient(45deg, rgba(26, 237, 236, 0.2) 0%, rgba(121, 126, 246, 0.2) 50%) !important;
+}
+
