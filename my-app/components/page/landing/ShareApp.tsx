@@ -7,7 +7,7 @@ const ShareApp = () => {
     return (
         <div className='backgroundContainer'>
             <div className="background" />
-            <div className="absolute z-30 top-1/2 flex flex-col md:flex-row justify-center md:justify-between w-full gap-2 items-center container mx-auto">
+            <div className="px-4 absolute z-30 top-1/2 -translate-y-1/2 flex flex-col md:flex-row justify-center md:justify-between w-full gap-2 items-center container mx-auto">
                 <h2 className="text-white text-2xl font-bold ">
                     Download Gigaland app for your mobile.
                 </h2>
