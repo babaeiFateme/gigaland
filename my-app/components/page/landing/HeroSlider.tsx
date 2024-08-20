@@ -13,7 +13,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import 'swiper/css/autoplay';
-
+import { motion } from "framer-motion"
 const HeroSlider = () => {
   return (
     <div className='h-full w-full'>
@@ -23,19 +23,26 @@ const HeroSlider = () => {
         slidesPerView={1}
         navigation
         loop={true}
-        autoplay={{ delay: 2000 }}
+        autoplay={{ delay: 4000 }}
         pagination={{ clickable: true }}
       >
         {[hero1, hero2, hero3, hero4, hero5, hero6].map((hero, index) => (
-          <SwiperSlide key={index} className='h-full'>
-            <div className="group overflow-hidden rounded-2xl">
+          <SwiperSlide key={index} className='h-full overflow-hidden rounded-2xl'>
+            <div className='overflow-hidden'>
+            <motion.div className="group rounded-2xl"
+              whileHover={{ scale: 1.1 }} 
+              whileTap={{ scale: 1.05 }}
+              transition={{ duration: 1 }} 
+              >
               <Image
-                className="block aspect-[1.2] w-full h-full rounded-2xl object-cover transform transition-transform duration-1000 ease-in-out group-hover:scale-150"
+                className="block aspect-[1.2] w-full h-full rounded-2xl object-cover ease-in-out"
                 src={hero}
                 width={800}
                 height={800}
                 alt={`Hero ${index + 1}`}
               />
+            </motion.div>
+
             </div>
           </SwiperSlide>
         ))}
