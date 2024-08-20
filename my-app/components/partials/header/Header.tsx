@@ -1,21 +1,27 @@
+'use client'
+import { MdClose } from "react-icons/md";
 
-import React from "react";
+
+import React, { useState } from "react";
 import AcmeLogo from "@/public/images/landing/author/author-9.jpg";
 import { LuAlignJustify } from "react-icons/lu";
 import Image from "next/image";
 import Link from "next/link";
 
 const Header = () => {
+    const [toggleMenu, setToggleMenu] = useState(false)
     const menuItems = [
         "Home",
         "Profile",
         "Activity",
         "Help",
     ];
-
+    const toggleMenus = () => {
+        setToggleMenu(!toggleMenu)
+    }
     return (
         <nav className="text-white fixed top-0 py-4 bg-primary-950 z-50 w-full mx-auto flex justify-between items-center px-[26px] lg:px-20">
-            <button  type="button" className="flex justify-start lg:hidden " >
+            <button type="button" className="flex justify-start lg:hidden" onClick={() => toggleMenus()} >
                 <LuAlignJustify className="text-white text-lg font-bold" />
             </button>
 
@@ -62,24 +68,28 @@ const Header = () => {
             </div>
 
 
+            <div className={`absolute left-0 top-0 h-screen bg-primary-950 w-[300px] ${toggleMenu === false ? 'hidden' : "block"}`}>
+                <button type="button" onClick={()=>toggleMenu}>
+                    <MdClose className="text-white text-lg" />
+                </button>
+                <ul className=''>
+                    {menuItems.map((item, index) => (
+                        <li className="p-[10px] my-4" key={`${item}-${index}`}>
+                            <Link
+                                className="w-full"
+                                color={
+                                    index === 2 ? "warning" : index === menuItems.length - 1 ? "danger" : "foreground"
+                                }
+                                href="#"
 
-            <ul className="hidden">
-                {menuItems.map((item, index) => (
-                    <li key={`${item}-${index}`}>
-                        <Link
-                            className="w-full"
-                            color={
-                                index === 2 ? "warning" : index === menuItems.length - 1 ? "danger" : "foreground"
-                            }
-                            href="#"
-
-                        >
-                            {item}
-                        </Link>
-                    </li>
-                ))}
-            </ul>
-        </nav>
+                            >
+                                {item}
+                            </Link>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+        </nav >
     );
 }
 export default Header
