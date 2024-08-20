@@ -19,13 +19,14 @@
     height: 100% !important;
 }
 .backgroundContainer {
-    @apply w-full h-[150px] overflow-hidden relative my-10;
+    @apply w-full text-center md:text-start h-[250px] md:h-[150px] relative  flex justify-between items-center;
 }
 
 .background {
-    @apply absolute w-full h-full bg-cover bg-center;
+    @apply absolute w-full h-full bg-repeat ;
     background-image: url("/images/landing/24.jpg");
     animation: moveBackground 10s linear infinite;
+    background-size: 1200px;
 }
 .background::before {
     content: "";
@@ -41,9 +42,9 @@
         background-position: 0 0;
     }
     50% {
-        background-position: 0 50%;
+        background-position: -50% 0;
     }
     100% {
-        background-position: 0 100%;
+        background-position: -100% 0;
     }
 }
