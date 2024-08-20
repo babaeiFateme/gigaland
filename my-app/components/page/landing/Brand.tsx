@@ -8,58 +8,58 @@ import brand6 from "@/public/images/landing/6.png"
 
 const Brand = () => {
     return (
-        <div className="container mx-auto">
-            <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-[20px]">
-                <div className="p-[10px] md:p-[20px] lg:p-[30px] bg-primary-850 hover:bg-primary-600 flex flex-col items-center justify-center gap-2 rounded-xl brand-card">
+        <div className="container mx-auto max-w-[1300px]">
+            <div className="mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-[20px] px-6">
+                <div className="p-[10px] md:p-[20px] lg:p-[30px] transition ease-in-out delay-150 bg-primary-850 hover:bg-primary-600 flex flex-col items-center justify-center gap-2 rounded-2xl brand-card">
                     <Image
                         src={brand1}
-                        width={60}
-                        height={60}
+                        width={70}
+                        height={70}
                         alt="Picture of the author"
                     />
                     <h3 className='text-white text-sm'>Metamask</h3>
                 </div>
-                <div className="p-[10px] md:p-[20px] lg:p-[30px] transition ease-in-out delay-150 bg-primary-850 hover:bg-primary-600 flex flex-col items-center justify-center gap-2 rounded-xl brand-card">
+                <div className="p-[10px] md:p-[20px] lg:p-[30px] transition ease-in-out delay-150 bg-primary-850 hover:bg-primary-600 flex flex-col items-center justify-center gap-2 rounded-2xl brand-card">
                     <Image
                         src={brand2}
-                        width={60}
-                        height={60}
+                        width={70}
+                        height={70}
                         alt="Bitski"
                     />
                     <h3 className='text-white text-sm'>Bitski</h3>
                 </div>
-                <div className="p-[10px] md:p-[20px] lg:p-[30px] transition ease-in-out delay-150 bg-primary-850 hover:bg-primary-600 flex flex-col items-center justify-center gap-2 rounded-xl brand-card">
+                <div className="p-[10px] md:p-[20px] lg:p-[30px] transition ease-in-out delay-150 bg-primary-850 hover:bg-primary-600 flex flex-col items-center justify-center gap-2 rounded-2xl brand-card">
                     <Image
                         src={brand3}
-                        width={60}
-                        height={60}
+                        width={70}
+                        height={70}
                         alt="Fortmatic"
                     />
                     <h3 className='text-white text-sm'>Fortmatic</h3>
                 </div>
-                <div className="p-[10px] md:p-[20px] lg:p-[30px]transition ease-in-out delay-150 bg-primary-850 hover:bg-primary-600 flex flex-col items-center justify-center gap-2 rounded-xl brand-card">
+                <div className="p-[10px] md:p-[20px] lg:p-[30px] transition ease-in-out delay-150 bg-primary-850 hover:bg-primary-600 flex flex-col items-center justify-center gap-2 rounded-2xl brand-card">
                     <Image
                         src={brand4}
-                        width={60}
-                        height={60}
+                        width={70}
+                        height={70}
                         alt="WalletConnect"
                     />
                     <h3 className='text-white text-sm'>WalletConnect</h3>
                 </div>
-                <div className="p-[10px] md:p-[20px] lg:p-[30px]transition ease-in-out delay-150 bg-primary-850 hover:bg-primary-600 flex flex-col items-center justify-center gap-2 rounded-xl brand-card">
+                <div className="p-[10px] md:p-[20px] lg:p-[30px] transition ease-in-out delay-150 bg-primary-850 hover:bg-primary-600 flex flex-col items-center justify-center gap-2 rounded-2xl brand-card">
                     <Image
                         src={brand5}
-                        width={60}
-                        height={60}
+                        width={70}
+                        height={70}
                         alt="Coinbase Wallet"
                     />
                     <h3 className='text-white text-sm'>Coinbase Wallet</h3>
                 </div>
-                <div className="p-[10px] md:p-[20px] lg:p-[30px]transition ease-in-out delay-150 bg-primary-850 hover:bg-primary-600 transition-all flex flex-col items-center justify-center gap-2 rounded-xl brand-card">
+                <div className="p-[10px] md:p-[20px] lg:p-[30px] transition ease-in-out delay-150 bg-primary-850 hover:bg-primary-600 transition-all flex flex-col items-center justify-center gap-2 rounded-2xl brand-card">
                     <Image
                         src={brand6}
-                        width={60}
-                        height={60}
+                        width={70}
+                        height={70}
                         alt="Arkane"
                     />
                     <h3 className='text-white text-sm'>Arkane</h3>
