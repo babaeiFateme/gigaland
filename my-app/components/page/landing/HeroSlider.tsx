@@ -23,30 +23,37 @@ const HeroSlider = () => {
         slidesPerView={1}
         navigation
         loop={true}
-        autoplay={{ delay: 4000 }}
-        pagination={{ clickable: true }}
+      // autoplay={{ delay: 4000 }}
+      // pagination={{ clickable: true }}
       >
         {[hero1, hero2, hero3, hero4, hero5, hero6].map((hero, index) => (
           <SwiperSlide key={index} className='h-full overflow-hidden rounded-2xl'>
             <div className='overflow-hidden'>
-            <motion.div className="group rounded-2xl"
-              whileHover={{ scale: 1.1 }} 
-              whileTap={{ scale: 1.05 }}
-              transition={{ duration: 1 }} 
+              <motion.div className="group rounded-2xl"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 1.05 }}
+                transition={{ duration: 1 }}
               >
-              <Image
-                className="block aspect-[1.2] w-full h-full rounded-2xl object-cover ease-in-out"
-                src={hero}
-                width={800}
-                height={800}
-                alt={`Hero ${index + 1}`}
-              />
-            </motion.div>
+                <Image
+                  className="block aspect-[1.2] w-full h-full rounded-2xl object-cover ease-in-out"
+                  src={hero}
+                  width={800}
+                  height={800}
+                  alt={`Hero ${index + 1}`}
+                />
+              </motion.div>
+                <div>
+                  <span className="absolute left-5 bottom-5 flex flex-col gap-1">
+                    <span className="text-xl font-semibold text-white">Manganite</span>
+                    <span className="text-gray-500 font-semibold text-base">Fred Ryan</span>
+                  </span>
+                </div>
 
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
+
     </div>
   );
 };

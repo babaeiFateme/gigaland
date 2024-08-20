@@ -23,7 +23,7 @@
 }
 
 .background {
-    @apply absolute w-full h-full bg-repeat ;
+    @apply absolute w-full h-full bg-repeat;
     background-image: url("/images/landing/24.jpg");
     animation: moveBackground 10s linear infinite;
     background-size: 1200px;
@@ -47,4 +47,82 @@
     100% {
         background-position: -100% 0;
     }
+}
+
+/* .swiper-button-prev,
+.swiper-button-next {
+    top: 45%;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border: 1px solid gray;
+    border-radius: 50%;
+    color: blue;
+    font-weight: 700;
+    outline: 0;
+    transition: background-color 0.2s ease, color 0.2s ease;
+
+    &::after {
+        font-size: 16px;
+    }
+}
+
+.swiper-button-prev {
+    &:after {
+        position: relative;
+        left: -1px;
+    }
+}
+
+.swiper-button-next {
+    &:after {
+        position: relative;
+        left: 1px;
+    }
+}
+
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+    left: 10px;
+    right: auto;
+} */
+/* 
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+    right: 10px;
+    left: auto;
+}
+
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled {
+    opacity: 0;
+    cursor: auto;
+    pointer-events: none;
+} */
+.swiper-button-next {
+    border-radius: 4rem 0 0 4rem !important;
+    width: 3rem !important;
+    height: 5rem !important;
+    right: -10px !important;
+    transform: translate(0, -50%);
+    background-color: #fff;
+    display: none !important;
+}
+.swiper-button-prev {
+    border-radius: 0 4rem 4rem 0 !important;
+    width: 3rem !important;
+    height: 5rem !important;
+    left: -10px !important;
+    transform: translate(0, -50%);
+    background-color: #fff;
+    display: none !important;
+}
+.swiper:hover .swiper-button-next , .swiper:hover .swiper-button-prev {
+    display: flex !important;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after{
+    transform:  scale(.4);
+    font-weight: 700;
+    color: #000;
 }
