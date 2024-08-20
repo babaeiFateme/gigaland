@@ -1,5 +1,7 @@
 import Image from "next/image"
 import userImage from "@/public/images/landing/author/author-11.jpg"
+import { FaCircleCheck } from "react-icons/fa6";
+import { HiCheckCircle } from "react-icons/hi";
 
 const TopSeller = () => {
     return (
@@ -16,7 +18,10 @@ const TopSeller = () => {
                                 <div className="rounded-full counter backdrop-blur-md w-[50px] h-[50px] flex items-center justify-center text-white relative -z-0 -right-3">
                                     1
                                 </div>
-                                <Image className="rounded-full relative z-10" src={userImage} alt="user1" width={50} height={50} />
+                                <div className="rounded-full relative z-10 group btn-gradient">
+                                    <Image className="rounded-full group-hover:p-1 transition-all duration-300" src={userImage} alt="user1" width={50} height={50} />
+                                    <HiCheckCircle className="absolute bottom-0 right-0 text-primary-400 text-xl" />
+                                </div>
                             </div>
                             <div className="flex-grow">
                                 <div className="flex justify-between items-center text-white font-bold mb-1 mr-3 lg:mr-0">
@@ -42,7 +47,10 @@ const TopSeller = () => {
                                 <div className="rounded-full counter backdrop-blur-md w-[50px] h-[50px] flex items-center justify-center text-white relative -z-0 -right-3">
                                     1
                                 </div>
-                                <Image className="rounded-full relative z-10" src={userImage} alt="user1" width={50} height={50} />
+                                <div className="rounded-full relative z-10 group btn-gradient">
+                                    <Image className="rounded-full group-hover:p-1 transition-all duration-300" src={userImage} alt="user1" width={50} height={50} />
+                                    <HiCheckCircle className="absolute bottom-0 right-0 text-primary-400 text-xl" />
+                                </div>
                             </div>
                             <div className="flex-grow">
                                 <div className="flex justify-between items-center text-white font-bold mb-1 mr-3 lg:mr-0">
@@ -68,7 +76,10 @@ const TopSeller = () => {
                                 <div className="rounded-full counter backdrop-blur-md w-[50px] h-[50px] flex items-center justify-center text-white relative -z-0 -right-3">
                                     1
                                 </div>
-                                <Image className="rounded-full relative z-10" src={userImage} alt="user1" width={50} height={50} />
+                                <div className="rounded-full relative z-10 group btn-gradient">
+                                    <Image className="rounded-full group-hover:p-1 transition-all duration-300" src={userImage} alt="user1" width={50} height={50} />
+                                    <HiCheckCircle className="absolute bottom-0 right-0 text-primary-400 text-xl" />
+                                </div>
                             </div>
                             <div className="flex-grow">
                                 <div className="flex justify-between items-center text-white font-bold mb-1 mr-3 lg:mr-0">
@@ -94,7 +105,10 @@ const TopSeller = () => {
                                 <div className="rounded-full counter backdrop-blur-md w-[50px] h-[50px] flex items-center justify-center text-white relative -z-0 -right-3">
                                     1
                                 </div>
-                                <Image className="rounded-full relative z-10" src={userImage} alt="user1" width={50} height={50} />
+                                <div className="rounded-full relative z-10 group btn-gradient">
+                                    <Image className="rounded-full group-hover:p-1 transition-all duration-300" src={userImage} alt="user1" width={50} height={50} />
+                                    <HiCheckCircle className="absolute bottom-0 right-0 text-primary-400 text-xl" />
+                                </div>
                             </div>
                             <div className="flex-grow">
                                 <div className="flex justify-between items-center text-white font-bold mb-1 mr-3 lg:mr-0">
@@ -120,7 +134,10 @@ const TopSeller = () => {
                                 <div className="rounded-full counter backdrop-blur-md w-[50px] h-[50px] flex items-center justify-center text-white relative -z-0 -right-3">
                                     1
                                 </div>
-                                <Image className="rounded-full relative z-10" src={userImage} alt="user1" width={50} height={50} />
+                                <div className="rounded-full relative z-10 group btn-gradient">
+                                    <Image className="rounded-full group-hover:p-1 transition-all duration-300" src={userImage} alt="user1" width={50} height={50} />
+                                    <HiCheckCircle className="absolute bottom-0 right-0 text-primary-400 text-xl" />
+                                </div>
                             </div>
                             <div className="flex-grow">
                                 <div className="flex justify-between items-center text-white font-bold mb-1 mr-3 lg:mr-0">
@@ -141,6 +158,7 @@ const TopSeller = () => {
                                 </div>
                             </div>
                         </div>
+
                     </div>
                     <div>
                         <div className="flex gap-2 items-center mb-10">
@@ -148,7 +166,10 @@ const TopSeller = () => {
                                 <div className="rounded-full counter backdrop-blur-md w-[50px] h-[50px] flex items-center justify-center text-white relative -z-0 -right-3">
                                     1
                                 </div>
-                                <Image className="rounded-full relative z-10" src={userImage} alt="user1" width={50} height={50} />
+                                <div className="rounded-full relative z-10 group btn-gradient">
+                                    <Image className="rounded-full group-hover:p-1 transition-all duration-300" src={userImage} alt="user1" width={50} height={50} />
+                                    <HiCheckCircle className="absolute bottom-0 right-0 text-primary-400 text-xl" />
+                                </div>
                             </div>
                             <div className="flex-grow">
                                 <div className="flex justify-between items-center text-white font-bold mb-1 mr-3 lg:mr-0">
@@ -174,7 +195,10 @@ const TopSeller = () => {
                                 <div className="rounded-full counter backdrop-blur-md w-[50px] h-[50px] flex items-center justify-center text-white relative -z-0 -right-3">
                                     1
                                 </div>
-                                <Image className="rounded-full relative z-10" src={userImage} alt="user1" width={50} height={50} />
+                                <div className="rounded-full relative z-10 group btn-gradient">
+                                    <Image className="rounded-full group-hover:p-1 transition-all duration-300" src={userImage} alt="user1" width={50} height={50} />
+                                    <HiCheckCircle className="absolute bottom-0 right-0 text-primary-400 text-xl" />
+                                </div>
                             </div>
                             <div className="flex-grow">
                                 <div className="flex justify-between items-center text-white font-bold mb-1 mr-3 lg:mr-0">
@@ -200,7 +224,10 @@ const TopSeller = () => {
                                 <div className="rounded-full counter backdrop-blur-md w-[50px] h-[50px] flex items-center justify-center text-white relative -z-0 -right-3">
                                     1
                                 </div>
-                                <Image className="rounded-full relative z-10" src={userImage} alt="user1" width={50} height={50} />
+                                <div className="rounded-full relative z-10 group btn-gradient">
+                                    <Image className="rounded-full group-hover:p-1 transition-all duration-300" src={userImage} alt="user1" width={50} height={50} />
+                                    <HiCheckCircle className="absolute bottom-0 right-0 text-primary-400 text-xl" />
+                                </div>
                             </div>
                             <div className="flex-grow">
                                 <div className="flex justify-between items-center text-white font-bold mb-1 mr-3 lg:mr-0">
@@ -226,7 +253,10 @@ const TopSeller = () => {
                                 <div className="rounded-full counter backdrop-blur-md w-[50px] h-[50px] flex items-center justify-center text-white relative -z-0 -right-3">
                                     1
                                 </div>
-                                <Image className="rounded-full relative z-10" src={userImage} alt="user1" width={50} height={50} />
+                                <div className="rounded-full relative z-10 group btn-gradient">
+                                    <Image className="rounded-full group-hover:p-1 transition-all duration-300" src={userImage} alt="user1" width={50} height={50} />
+                                    <HiCheckCircle className="absolute bottom-0 right-0 text-primary-400 text-xl" />
+                                </div>
                             </div>
                             <div className="flex-grow">
                                 <div className="flex justify-between items-center text-white font-bold mb-1 mr-3 lg:mr-0">
@@ -252,7 +282,10 @@ const TopSeller = () => {
                                 <div className="rounded-full counter backdrop-blur-md w-[50px] h-[50px] flex items-center justify-center text-white relative -z-0 -right-3">
                                     1
                                 </div>
-                                <Image className="rounded-full relative z-10" src={userImage} alt="user1" width={50} height={50} />
+                                <div className="rounded-full relative z-10 group btn-gradient">
+                                    <Image className="rounded-full group-hover:p-1 transition-all duration-300" src={userImage} alt="user1" width={50} height={50} />
+                                    <HiCheckCircle className="absolute bottom-0 right-0 text-primary-400 text-xl" />
+                                </div>
                             </div>
                             <div className="flex-grow">
                                 <div className="flex justify-between items-center text-white font-bold mb-1 mr-3 lg:mr-0">
@@ -273,6 +306,7 @@ const TopSeller = () => {
                                 </div>
                             </div>
                         </div>
+
                     </div>
                     <div>
                         <div className="flex gap-2 items-center mb-10">
@@ -280,7 +314,10 @@ const TopSeller = () => {
                                 <div className="rounded-full counter backdrop-blur-md w-[50px] h-[50px] flex items-center justify-center text-white relative -z-0 -right-3">
                                     1
                                 </div>
-                                <Image className="rounded-full relative z-10" src={userImage} alt="user1" width={50} height={50} />
+                                <div className="rounded-full relative z-10 group btn-gradient">
+                                    <Image className="rounded-full group-hover:p-1 transition-all duration-300" src={userImage} alt="user1" width={50} height={50} />
+                                    <HiCheckCircle className="absolute bottom-0 right-0 text-primary-400 text-xl" />
+                                </div>
                             </div>
                             <div className="flex-grow">
                                 <div className="flex justify-between items-center text-white font-bold mb-1 mr-3 lg:mr-0">
@@ -306,7 +343,10 @@ const TopSeller = () => {
                                 <div className="rounded-full counter backdrop-blur-md w-[50px] h-[50px] flex items-center justify-center text-white relative -z-0 -right-3">
                                     1
                                 </div>
-                                <Image className="rounded-full relative z-10" src={userImage} alt="user1" width={50} height={50} />
+                                <div className="rounded-full relative z-10 group btn-gradient">
+                                    <Image className="rounded-full group-hover:p-1 transition-all duration-300" src={userImage} alt="user1" width={50} height={50} />
+                                    <HiCheckCircle className="absolute bottom-0 right-0 text-primary-400 text-xl" />
+                                </div>
                             </div>
                             <div className="flex-grow">
                                 <div className="flex justify-between items-center text-white font-bold mb-1 mr-3 lg:mr-0">
@@ -332,7 +372,10 @@ const TopSeller = () => {
                                 <div className="rounded-full counter backdrop-blur-md w-[50px] h-[50px] flex items-center justify-center text-white relative -z-0 -right-3">
                                     1
                                 </div>
-                                <Image className="rounded-full relative z-10" src={userImage} alt="user1" width={50} height={50} />
+                                <div className="rounded-full relative z-10 group btn-gradient">
+                                    <Image className="rounded-full group-hover:p-1 transition-all duration-300" src={userImage} alt="user1" width={50} height={50} />
+                                    <HiCheckCircle className="absolute bottom-0 right-0 text-primary-400 text-xl" />
+                                </div>
                             </div>
                             <div className="flex-grow">
                                 <div className="flex justify-between items-center text-white font-bold mb-1 mr-3 lg:mr-0">
@@ -358,7 +401,10 @@ const TopSeller = () => {
                                 <div className="rounded-full counter backdrop-blur-md w-[50px] h-[50px] flex items-center justify-center text-white relative -z-0 -right-3">
                                     1
                                 </div>
-                                <Image className="rounded-full relative z-10" src={userImage} alt="user1" width={50} height={50} />
+                                <div className="rounded-full relative z-10 group btn-gradient">
+                                    <Image className="rounded-full group-hover:p-1 transition-all duration-300" src={userImage} alt="user1" width={50} height={50} />
+                                    <HiCheckCircle className="absolute bottom-0 right-0 text-primary-400 text-xl" />
+                                </div>
                             </div>
                             <div className="flex-grow">
                                 <div className="flex justify-between items-center text-white font-bold mb-1 mr-3 lg:mr-0">
@@ -384,7 +430,10 @@ const TopSeller = () => {
                                 <div className="rounded-full counter backdrop-blur-md w-[50px] h-[50px] flex items-center justify-center text-white relative -z-0 -right-3">
                                     1
                                 </div>
-                                <Image className="rounded-full relative z-10" src={userImage} alt="user1" width={50} height={50} />
+                                <div className="rounded-full relative z-10 group btn-gradient">
+                                    <Image className="rounded-full group-hover:p-1 transition-all duration-300" src={userImage} alt="user1" width={50} height={50} />
+                                    <HiCheckCircle className="absolute bottom-0 right-0 text-primary-400 text-xl" />
+                                </div>
                             </div>
                             <div className="flex-grow">
                                 <div className="flex justify-between items-center text-white font-bold mb-1 mr-3 lg:mr-0">
@@ -405,8 +454,9 @@ const TopSeller = () => {
                                 </div>
                             </div>
                         </div>
+
                     </div>
-                    
+
                 </div>
             </div>
         </div>
