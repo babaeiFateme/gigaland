@@ -11,6 +11,7 @@ const config: Config = {
       transparent: 'transparent',
       white: '#ffffff',
       lightGlass:'#fffff111',
+      midGlass:'#ffffff33',
       primary: {
         100: '#cffafe',
         200: '#a5f3fc',

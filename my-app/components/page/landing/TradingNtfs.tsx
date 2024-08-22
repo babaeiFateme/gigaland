@@ -58,12 +58,12 @@ const TradingNtfs = () => {
                                 alt=""
                             />
                         </div>
-                        <div className='absolute top-4 left-3 hover:border-2 hover:border-red rounded-full group'>
-                            <Image className='rounded-full transform transition-transform duration-1000 ease-in-out group-hover:scale-[0.9]' src={author2} width={50} height={50} alt='author' />
+                        <div className='absolute top-4 left-3 rounded-full group btn-gradient'>
+                            <Image className='rounded-full transition-all duration-1000 ease-in-out group-hover:p-1' src={author2} width={50} height={50} alt='author' />
                         </div>
                         <div className='my-3'>
                             <div className='flex gap-2 items-center justify-between mb-2'>
-                                <h3 className='text-white text-sm'>Superpious</h3>
+                                <h3 className='text-white text-sm'>Superpious sfs</h3>
                                 <div className='text-white text-xl'>
                                     ...
                                 </div>
@@ -95,8 +95,8 @@ const TradingNtfs = () => {
                                 alt=""
                             />
                         </div>
-                        <div className='absolute top-4 left-3 hover:border-2 hover:border-red rounded-full group'>
-                            <Image className='rounded-full transform transition-transform duration-1000 ease-in-out group-hover:scale-[0.9]' src={author1} width={50} height={50} alt='author' />
+                        <div className='absolute top-4 left-3 rounded-full group btn-gradient'>
+                            <Image className='rounded-full transition-all duration-1000 ease-in-out group-hover:p-1' src={author2} width={50} height={50} alt='author' />
                         </div>
                         <div className='my-3'>
                             <div className='flex gap-2 items-center justify-between mb-2'>
@@ -132,8 +132,8 @@ const TradingNtfs = () => {
                                 alt=""
                             />
                         </div>
-                        <div className='absolute top-4 left-3 hover:border-2 hover:border-red rounded-full group'>
-                            <Image className='rounded-full transform transition-transform duration-1000 ease-in-out group-hover:scale-[0.9]' src={author1} width={50} height={50} alt='author' />
+                        <div className='absolute top-4 left-3 rounded-full group btn-gradient'>
+                            <Image className='rounded-full transition-all duration-1000 ease-in-out group-hover:p-1' src={author2} width={50} height={50} alt='author' />
                         </div>
                         <div className='my-3'>
                             <div className='flex gap-2 items-center justify-between mb-2'>
@@ -169,8 +169,8 @@ const TradingNtfs = () => {
                                 alt=""
                             />
                         </div>
-                        <div className='absolute top-4 left-3 hover:border-2 hover:border-red rounded-full group'>
-                            <Image className='rounded-full transform transition-transform duration-1000 ease-in-out group-hover:scale-[0.9]' src={author1} width={50} height={50} alt='author' />
+                        <div className='absolute top-4 left-3 rounded-full group btn-gradient'>
+                            <Image className='rounded-full transition-all duration-1000 ease-in-out group-hover:p-1' src={author2} width={50} height={50} alt='author' />
                         </div>
                         <div className='my-3'>
                             <div className='flex gap-2 items-center justify-between mb-2'>
@@ -206,8 +206,8 @@ const TradingNtfs = () => {
                                 alt=""
                             />
                         </div>
-                        <div className='absolute top-4 left-3 hover:border-2 hover:border-red rounded-full group'>
-                            <Image className='rounded-full transform transition-transform duration-1000 ease-in-out group-hover:scale-[0.9]' src={author1} width={50} height={50} alt='author' />
+                        <div className='absolute top-4 left-3 rounded-full group btn-gradient'>
+                            <Image className='rounded-full transition-all duration-1000 ease-in-out group-hover:p-1' src={author2} width={50} height={50} alt='author' />
                         </div>
                         <div className='my-3'>
                             <div className='flex gap-2 items-center justify-between mb-2'>
@@ -243,8 +243,8 @@ const TradingNtfs = () => {
                                 alt=""
                             />
                         </div>
-                        <div className='absolute top-4 left-3 hover:border-2 hover:border-red rounded-full group'>
-                            <Image className='rounded-full transform transition-transform duration-1000 ease-in-out group-hover:scale-[0.9]' src={author1} width={50} height={50} alt='author' />
+                        <div className='absolute top-4 left-3 rounded-full group btn-gradient'>
+                            <Image className='rounded-full transition-all duration-1000 ease-in-out group-hover:p-1' src={author2} width={50} height={50} alt='author' />
                         </div>
                         <div className='my-3'>
                             <div className='flex gap-2 items-center justify-between mb-2'>
