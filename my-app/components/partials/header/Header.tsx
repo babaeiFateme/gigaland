@@ -11,10 +11,9 @@ import Link from "next/link";
 const Header = () => {
     const [toggleMenu, setToggleMenu] = useState(false)
     const menuItems = [
-        "Home",
-        "Profile",
-        "Activity",
-        "Help",
+        { name: "Home", route: "/" },
+        { name: "Profile", route: "/" },
+        { name: "Wallet", route: "/wallet" },
     ];
     const toggleMenus = () => {
         setToggleMenu(!toggleMenu)
@@ -40,8 +39,8 @@ const Header = () => {
                             <span className="font-bold text-inherit">ACME</span>
                         </div>
                         <div>
-                            <input type="text" placeholder="search item here..." 
-                            className="header-input placeholder:text-white placeholder:text-sm bg-lightGlass min-h-[30px] w-full max-w-[400px] px-2 py-2 rounded-md focus:border-0 active:border-0 focus-visible:border-0 focus-visible:outline-none" />
+                            <input type="text" placeholder="search item here..."
+                                className="header-input placeholder:text-white placeholder:text-sm bg-lightGlass min-h-[30px] w-full max-w-[400px] px-2 py-2 rounded-md focus:border-0 active:border-0 focus-visible:border-0 focus-visible:outline-none" />
                         </div>
                     </div>
                     <ul className="flex gap-[20px] items-center">
@@ -52,10 +51,10 @@ const Header = () => {
                                     color={
                                         index === 2 ? "warning" : index === menuItems.length - 1 ? "danger" : "foreground"
                                     }
-                                    href="#"
+                                    href={`${item.route}`}
 
                                 >
-                                    {item}
+                                    {item.name}
                                 </Link>
                             </li>
                         ))}
@@ -89,10 +88,10 @@ const Header = () => {
                                 color={
                                     index === 2 ? "warning" : index === menuItems.length - 1 ? "danger" : "foreground"
                                 }
-                                href="#"
+                                href={`${item.route}`}
 
                             >
-                                {item}
+                                {item.name}
                             </Link>
                         </li>
                     ))}
