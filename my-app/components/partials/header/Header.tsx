@@ -12,7 +12,7 @@ const Header = () => {
     const [toggleMenu, setToggleMenu] = useState(false)
     const menuItems = [
         { name: "Home", route: "/" },
-        { name: "Profile", route: "/" },
+        { name: "Profile", route: "/profile" },
         { name: "Wallet", route: "/wallet" },
     ];
     const toggleMenus = () => {
