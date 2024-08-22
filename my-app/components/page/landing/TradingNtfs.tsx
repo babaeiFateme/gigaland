@@ -17,10 +17,12 @@ import trade5 from "@/public/images/landing/trade/static-23.jpg"
 import trade4 from "@/public/images/landing/trade/static-24.jpg"
 import author1 from "@/public/images/landing/author/author-9.jpg"
 import author2 from "@/public/images/landing/author/author-11.jpg"
+import { motion } from "framer-motion"
+import { HiCheckCircle } from 'react-icons/hi';
 
 const TradingNtfs = () => {
     return (
-        <div className='h-full w-full my-[30px]'>
+        <div className='h-full w-full my-[30px] trading-ntfs'>
             <h2 className="text-white font-bold text-xl my-[40px]">Trending NFTs</h2>
             <Swiper
                 modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
@@ -48,18 +50,24 @@ const TradingNtfs = () => {
 
             >
                 <SwiperSlide className='h-full'>
-                    <div className='group pt-10 pb-4 px-4 bg-primary-950 rounded-xl relative'>
-                        <div className="overflow-hidden rounded-2xl">
+                    <div className=' pt-10 pb-4 px-4 bg-primary-950 rounded-xl relative'>
+                        <motion.div className="group rounded-2xl"
+                            whileHover={{ scale: 1.08 }}
+                            whileTap={{ scale: 1.05 }}
+                            transition={{ duration: 1 }}
+                        >
                             <Image
-                                className="block aspect-[1.2] rounded-2xl object-cover transform transition-transform duration-1000 ease-in-out group-hover:scale-150"
+                                className="block aspect-[1.2] rounded-2xl object-cover transform transition-transform "
                                 src={trade1}
                                 width={800}
                                 height={800}
                                 alt=""
                             />
-                        </div>
+                        </motion.div>
                         <div className='absolute top-4 left-3 rounded-full group btn-gradient'>
                             <Image className='rounded-full transition-all duration-1000 ease-in-out group-hover:p-1' src={author2} width={50} height={50} alt='author' />
+                            <HiCheckCircle className="absolute bottom-0 right-0 text-primary-400 text-xl" />
+
                         </div>
                         <div className='my-3'>
                             <div className='flex gap-2 items-center justify-between mb-2'>
@@ -85,18 +93,23 @@ const TradingNtfs = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className='h-full'>
-                    <div className='group pt-10 pb-4 px-4 bg-primary-950 rounded-xl relative'>
-                        <div className=" overflow-hidden rounded-2xl">
+                    <div className=' pt-10 pb-4 px-4 bg-primary-950 rounded-xl relative'>
+                        <motion.div className="group rounded-2xl"
+                            whileHover={{ scale: 1.08 }}
+                            whileTap={{ scale: 1.05 }}
+                            transition={{ duration: 1 }}
+                        >
                             <Image
-                                className="block aspect-[1.2] rounded-2xl object-cover transform transition-transform duration-1000 ease-in-out group-hover:scale-150"
+                                className="block aspect-[1.2] rounded-2xl object-cover "
                                 src={trade2}
                                 width={800}
                                 height={800}
                                 alt=""
                             />
-                        </div>
+                        </motion.div>
                         <div className='absolute top-4 left-3 rounded-full group btn-gradient'>
                             <Image className='rounded-full transition-all duration-1000 ease-in-out group-hover:p-1' src={author2} width={50} height={50} alt='author' />
+                            <HiCheckCircle className="absolute bottom-0 right-0 text-primary-400 text-xl" />
                         </div>
                         <div className='my-3'>
                             <div className='flex gap-2 items-center justify-between mb-2'>
@@ -122,18 +135,23 @@ const TradingNtfs = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className='h-full'>
-                    <div className='group pt-10 pb-4 px-4 bg-primary-950 rounded-xl relative'>
-                        <div className=" overflow-hidden rounded-2xl">
+                    <div className=' pt-10 pb-4 px-4 bg-primary-950 rounded-xl relative'>
+                        <motion.div className="group rounded-2xl"
+                            whileHover={{ scale: 1.08 }}
+                            whileTap={{ scale: 1.05 }}
+                            transition={{ duration: 1 }}
+                        >
                             <Image
-                                className="block aspect-[1.2] rounded-2xl object-cover transform transition-transform duration-1000 ease-in-out group-hover:scale-150"
+                                className="block aspect-[1.2] rounded-2xl object-cover"
                                 src={trade3}
                                 width={800}
                                 height={800}
                                 alt=""
                             />
-                        </div>
+                        </motion.div>
                         <div className='absolute top-4 left-3 rounded-full group btn-gradient'>
                             <Image className='rounded-full transition-all duration-1000 ease-in-out group-hover:p-1' src={author2} width={50} height={50} alt='author' />
+                            <HiCheckCircle className="absolute bottom-0 right-0 text-primary-400 text-xl" />
                         </div>
                         <div className='my-3'>
                             <div className='flex gap-2 items-center justify-between mb-2'>
@@ -159,18 +177,23 @@ const TradingNtfs = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className='h-full'>
-                    <div className='group pt-10 pb-4 px-4 bg-primary-950 rounded-xl relative'>
-                        <div className=" overflow-hidden rounded-2xl">
+                    <div className=' pt-10 pb-4 px-4 bg-primary-950 rounded-xl relative'>
+                        <motion.div className="group rounded-2xl"
+                            whileHover={{ scale: 1.08 }}
+                            whileTap={{ scale: 1.05 }}
+                            transition={{ duration: 1 }}
+                        >
                             <Image
-                                className="block aspect-[1.2] rounded-2xl object-cover transform transition-transform duration-1000 ease-in-out group-hover:scale-150"
+                                className="block aspect-[1.2] rounded-2xl object-cover "
                                 src={trade4}
                                 width={800}
                                 height={800}
                                 alt=""
                             />
-                        </div>
+                        </motion.div>
                         <div className='absolute top-4 left-3 rounded-full group btn-gradient'>
                             <Image className='rounded-full transition-all duration-1000 ease-in-out group-hover:p-1' src={author2} width={50} height={50} alt='author' />
+                            <HiCheckCircle className="absolute bottom-0 right-0 text-primary-400 text-xl" />
                         </div>
                         <div className='my-3'>
                             <div className='flex gap-2 items-center justify-between mb-2'>
@@ -196,18 +219,24 @@ const TradingNtfs = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className='h-full'>
-                    <div className='group pt-10 pb-4 px-4 bg-primary-950 rounded-xl relative'>
-                        <div className=" overflow-hidden rounded-2xl">
+                    <div className=' pt-10 pb-4 px-4 bg-primary-950 rounded-xl relative'>
+                        <motion.div className="group rounded-2xl"
+                            whileHover={{ scale: 1.08 }}
+                            whileTap={{ scale: 1.05 }}
+                            transition={{ duration: 1 }}
+                        >
                             <Image
-                                className="block aspect-[1.2] rounded-2xl object-cover transform transition-transform duration-1000 ease-in-out group-hover:scale-150"
+                                className="block aspect-[1.2] rounded-2xl object-cover transform"
                                 src={trade5}
                                 width={800}
                                 height={800}
                                 alt=""
                             />
-                        </div>
+                        </motion.div>
                         <div className='absolute top-4 left-3 rounded-full group btn-gradient'>
                             <Image className='rounded-full transition-all duration-1000 ease-in-out group-hover:p-1' src={author2} width={50} height={50} alt='author' />
+                            <HiCheckCircle className="absolute bottom-0 right-0 text-primary-400 text-xl" />
+
                         </div>
                         <div className='my-3'>
                             <div className='flex gap-2 items-center justify-between mb-2'>
@@ -233,18 +262,24 @@ const TradingNtfs = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className='h-full'>
-                    <div className='group pt-10 pb-4 px-4 bg-primary-950 rounded-xl relative'>
-                        <div className=" overflow-hidden rounded-2xl">
+                    <div className=' pt-10 pb-4 px-4 bg-primary-950 rounded-xl relative'>
+                        <motion.div className="group rounded-2xl"
+                            whileHover={{ scale: 1.08 }}
+                            whileTap={{ scale: 1.05 }}
+                            transition={{ duration: 1 }}
+                        >
                             <Image
-                                className="block aspect-[1.2] rounded-2xl object-cover transform transition-transform duration-1000 ease-in-out group-hover:scale-150"
+                                className="block aspect-[1.2] rounded-2xl object-cover"
                                 src={trade6}
                                 width={800}
                                 height={800}
                                 alt=""
                             />
-                        </div>
+                        </motion.div>
                         <div className='absolute top-4 left-3 rounded-full group btn-gradient'>
                             <Image className='rounded-full transition-all duration-1000 ease-in-out group-hover:p-1' src={author2} width={50} height={50} alt='author' />
+                            <HiCheckCircle className="absolute bottom-0 right-0 text-primary-400 text-xl" />
+
                         </div>
                         <div className='my-3'>
                             <div className='flex gap-2 items-center justify-between mb-2'>
