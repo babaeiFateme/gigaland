@@ -7,14 +7,10 @@ import AcmeLogo from "@/public/images/landing/author/author-9.jpg";
 import { LuAlignJustify } from "react-icons/lu";
 import Image from "next/image";
 import Link from "next/link";
+import menuItems from "@/components/content/Navlink";
 
 const Header = () => {
     const [toggleMenu, setToggleMenu] = useState(false)
-    const menuItems = [
-        { name: "Home", route: "/" },
-        { name: "Profile", route: "/profile" },
-        { name: "Wallet", route: "/wallet" },
-    ];
     const toggleMenus = () => {
         setToggleMenu(!toggleMenu)
     }
@@ -45,7 +41,7 @@ const Header = () => {
                     </div>
                     <ul className="flex gap-[20px] items-center">
                         {menuItems.map((item, index) => (
-                            <li key={`${item}-${index}`}>
+                            <li key={`${item}-${item.id}`}>
                                 <Link
                                     className="relative w-full before:content-normal before:absolute before:-bottom-3 before:h-[3px] transition duration-1000 before:transition-all before:duration-1000 before:left-0 before:bg-primary-300 before:w-0 before:block hover:before:w-full"
                                     color={
@@ -82,7 +78,7 @@ const Header = () => {
                 </div>
                 <ul className=''>
                     {menuItems.map((item, index) => (
-                        <li className="p-[10px] my-4" key={`${item}-${index}`}>
+                        <li className="p-[10px] my-4" key={`${item}-${item.id}`}>
                             <Link
                                 className="w-full"
                                 color={

@@ -7,7 +7,7 @@ import Header from "@/components/partials/header/Header";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "giga",
+  title: "Rayka",
   description: "Rayka site",
 };
 
