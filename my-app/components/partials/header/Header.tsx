@@ -11,12 +11,12 @@ import menuItems from "@/components/content/Navlink";
 
 const Header = () => {
     const [toggleMenu, setToggleMenu] = useState(false)
-    const toggleMenus = () => {
-        setToggleMenu(!toggleMenu)
-    }
+    // const toggleMenus = () => {
+    //     setToggleMenu(!toggleMenu)
+    // }
     return (
         <nav className="text-white fixed top-0 py-4 bg-primary-950 z-50 w-full mx-auto flex justify-between items-center px-[26px] lg:px-20">
-            <button type="button" className="flex justify-start lg:hidden" onClick={() => toggleMenus()} >
+            <button type="button" className="flex justify-start lg:hidden" onClick={() => setToggleMenu(!toggleMenu)} >
                 <LuAlignJustify className="text-white text-lg font-bold" />
             </button>
 
@@ -72,11 +72,11 @@ const Header = () => {
                             <span className="font-bold text-inherit">ACME</span>
                         </div>
                     </div>
-                    <button type="button" onClick={() => toggleMenus()}>
+                    <button type="button" onClick={() => setToggleMenu(!toggleMenu)}>
                         <MdClose className="text-white text-lg" />
                     </button>
                 </div>
-                <ul className=''>
+                <ul>
                     {menuItems.map((item, index) => (
                         <li className="p-[10px] my-4" key={`${item}-${item.id}`}>
                             <Link
