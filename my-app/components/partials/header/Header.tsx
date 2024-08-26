@@ -2,18 +2,56 @@
 import { MdClose } from "react-icons/md";
 
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import AcmeLogo from "@/public/images/landing/author/author-9.jpg";
 import { LuAlignJustify } from "react-icons/lu";
 import Image from "next/image";
 import Link from "next/link";
 import menuItems from "@/components/content/Navlink";
+import Web3 from 'web3';
+
+declare global {
+    interface Window {
+        ethereum?: any;
+    }
+}
+
 
 const Header = () => {
+    const [walletAddress, setWalletAddress] = useState<string>('');
+    const [web3, setWeb3] = useState<Web3 | null>(null);
+    useEffect(() => {
+        if (typeof window !== 'undefined' && typeof window.ethereum !== 'undefined') {
+            const web3Instance = new Web3(window.ethereum);
+            setWeb3(web3Instance);
+        } else {
+            alert('MetaMask is not installed!');
+        }
+    }, []);
+    const connectWallet = async () => {
+        if (!web3) return;
+
+        try {
+            // Request account access if needed
+            await window.ethereum.request({ method: 'eth_requestAccounts' });
+            const accounts = await web3.eth.getAccounts();
+            console.log(accounts);
+            setWalletAddress(accounts[0]);
+
+            // Listen for account changes
+            window.ethereum.on('accountsChanged', (accounts: string[]) => {
+                setWalletAddress(accounts[0] || '');
+            });
+
+            // Listen for network changes
+            window.ethereum.on('chainChanged', () => {
+                window.location.reload();
+            });
+        } catch (error) {
+            console.error("User rejected the request or there's an error: ", error);
+        }
+    };
     const [toggleMenu, setToggleMenu] = useState(false)
-    // const toggleMenus = () => {
-    //     setToggleMenu(!toggleMenu)
-    // }
     return (
         <nav className="text-white fixed top-0 py-4 bg-primary-950 z-50 w-full mx-auto flex justify-between items-center px-[26px] lg:px-20">
             <button type="button" className="flex justify-start lg:hidden" onClick={() => setToggleMenu(!toggleMenu)} >
@@ -55,9 +93,10 @@ const Header = () => {
                             </li>
                         ))}
                         <li>
-                            <button className="btn-gradient font-bold text-white rounded-lg px-4 py-2" type="button">
+                            <button onClick={connectWallet} className="btn-gradient font-bold text-white rounded-lg px-4 py-2" type="button">
                                 Connect wallet
                             </button>
+                            {walletAddress && <p>Connected Wallet: {walletAddress}</p>}
                         </li>
                     </ul>
                 </div>
