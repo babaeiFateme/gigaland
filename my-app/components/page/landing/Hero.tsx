@@ -1,3 +1,4 @@
+import Button from "@/components/common/button/Button"
 import HeroSlider from "./HeroSlider"
 
 const Hero = () => {
@@ -19,8 +20,12 @@ const Hero = () => {
                         Welcome to the future, you can buy and sell awesome artworks form here. The world largest digital marketplace for non-fungible tokens.
                     </div>
                     <div className="grid grid-cols-2 gap-4 max-w-[300px] mt-5">
-                        <button type="button" className="btn-gradient font-bold text-white bg-primary-500 py-3 px-10 rounded-lg hero-button">Explore</button>
-                        <button type="button" className="text-white font-bold text-primary-400 bg-primary-500 py-3 px-10 rounded-lg hero-button">Sell</button>
+                        <Button type="button" size="medium" className="btn-gradient font-bold text-white bg-primary-500  rounded-lg hero-button">
+                            Explore
+                        </Button>
+                        <Button type="button" size="medium" className="text-white font-bold text-primary-400 bg-primary-500 py-3 px-10 rounded-lg hero-button">
+                            Sell
+                        </Button>
                     </div>
                 </div>
                 <div className="py-[30px] mr-[10px]">
