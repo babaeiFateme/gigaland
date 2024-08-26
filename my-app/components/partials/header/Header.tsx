@@ -9,6 +9,7 @@ import Image from "next/image";
 import Link from "next/link";
 import menuItems from "@/components/content/Navlink";
 import Web3 from 'web3';
+import Button from "@/components/common/button/Button";
 
 declare global {
     interface Window {
@@ -93,9 +94,9 @@ const Header = () => {
                             </li>
                         ))}
                         <li>
-                            <button onClick={connectWallet} className="btn-gradient font-bold text-white rounded-lg px-4 py-2" type="button">
+                            <Button onClick={connectWallet} className="btn-gradient font-bold text-white rounded-lg px-4 py-2" type="button">
                                 Connect wallet
-                            </button>
+                            </Button>
                             {walletAddress && <p>Connected Wallet: {walletAddress}</p>}
                         </li>
                     </ul>
