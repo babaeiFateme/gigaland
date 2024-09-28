@@ -11,11 +11,10 @@ import Button from '@/components/common/button/Button'
 
 const Footer = () => {
 
-    const ToTopHandler =()=>{
-        window.scrollTo({top:0,left:0 , behavior:'smooth'})
+    const ToTopHandler = () => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
     }
     return (
-
         <>
             <footer>
                 <div className="container md:mx-auto">
@@ -125,8 +124,8 @@ const Footer = () => {
                     © Copyright 2023 - Gigaland by Designesia
                 </div>
             </footer>
-            <Button className='text-primary-950 bg-primary-100 !p-0 w-[60px] z-50 rounded-sm d-block aspect-square fixed left-5 bottom-10' type='button' onClick={()=>ToTopHandler()} >
-                <BiArrowFromBottom className='text-3xl' />
+            <Button className=' bg-primary-100 !p-0 w-[40px] z-50 rounded-sm d-block aspect-square fixed left-5 bottom-10' type='button' onClick={() => ToTopHandler()} >
+                <BiArrowFromBottom className='text-2xl text-primary-950' />
             </Button>
         </>
     )
