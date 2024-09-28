@@ -5,21 +5,21 @@ import { FaArrowRight, FaFacebookF } from 'react-icons/fa6'
 import { MdMail } from 'react-icons/md'
 import SocialLinkContent from '@/components/content/SocialLinkContent'
 import SocialLink from '@/components/common/social-link/SocialLink'
+import Button from '@/components/common/button/Button'
 
 const Footer = () => {
     return (
         <footer>
-            <div className="container mx-auto">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-7 gap-20 text-white py-[40px]">
+            <div className="container md:mx-auto">
+                <div className=" mx-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-7 gap-20 text-white py-[40px]">
                     <div className="col-span-2">
                         <div className='mb-5 text-white text-xl font-bold'>Get the latest updates</div>
                         <div className=' text-gray-600 font-bold'>Signup for our newsletter to get the latest updates in your inbox.</div>
                         <div className='relative max-w-[300px] mt-5'>
                             <input type="text" placeholder="Enter Your Email..." className="placeholder:text-white placeholder:text-sm bg-lightGlass min-h-[30px] w-full pl-2 py-2 pr-5 rounded-md focus:border-0 active:border-0 focus-visible:border-0 focus-visible:outline-none" />
-                            <button type='button' className='btn-gradient px-4 h-full rounded-tr-md rounded-br-md absolute top-0 right-0'>
+                            <Button type='button' className='btn-gradient px-4 h-full rounded-tr-md rounded-br-md absolute top-0 right-0'>
                                 <FaArrowRight />
-
-                            </button>
+                            </Button>
                         </div>
                     </div>
 
