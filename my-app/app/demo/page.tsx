@@ -49,7 +49,7 @@ console.log(topSellers ,"Trending NFTs");
 
             <h2>Top Sellers (Top Cryptocurrencies by Market Cap)</h2>
             <ul>
-                {topSellers.map((coin) => (
+                {topSellers.map((coin:any) => (
                     <li key={coin.id}>
                         {coin.name} - ${coin.current_price}
                     </li>

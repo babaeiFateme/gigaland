@@ -478,8 +478,7 @@ const TopSeller = () => {
                     </div> */}
 
 
-                    {topSellers.map((coin) => (
-                        // biome-ignore lint/correctness/useJsxKeyInIterable: <explanation>
+                    {topSellers.map((coin:any) => (
                         <>
                             <div  key={coin.id} className="flex gap-2 items-center mb-10">
                                 <div className="flex items-center">

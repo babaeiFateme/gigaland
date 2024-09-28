@@ -67,7 +67,7 @@ const TradingNtfs = () => {
                 loop={true}
 
             >
-                {trendingNFTs.map((nft) => (
+                {trendingNFTs.map((nft:any) => (
 
                     <SwiperSlide key={nft.id} className='h-full'>
                         <div className=' pt-10 pb-4 px-4 bg-primary-950 rounded-xl relative'>
