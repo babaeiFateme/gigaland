@@ -13,10 +13,10 @@ const ShareApp = () => {
                 </h2>
                 <div className="flex gap-2 items-center justify-normal md:justify-end">
                     <Link href="/">
-                        <Image src={appStore} className="max-w-[150px]" />
+                        <Image src={appStore} className="max-w-[150px]" alt="app store" />
                     </Link>
                     <Link href="/">
-                        <Image src={playStore} className="max-w-[150px]" />
+                        <Image src={playStore} className="max-w-[150px]" alt="play store" />
                     </Link>
                 </div>
 
