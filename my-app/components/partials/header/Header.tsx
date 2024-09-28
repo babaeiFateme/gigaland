@@ -7,7 +7,7 @@ import AcmeLogo from "@/public/images/landing/author/author-9.jpg";
 import { LuAlignJustify } from "react-icons/lu";
 import Image from "next/image";
 import Link from "next/link";
-import menuItems from "@/components/content/Navlink";
+import MenuItemsContent from "@/components/content/MenuItemsContent";
 import Web3 from 'web3';
 import Button from "@/components/common/button/Button";
 
@@ -79,12 +79,12 @@ const Header = () => {
                         </div>
                     </div>
                     <ul className="flex gap-[20px] items-center">
-                        {menuItems.map((item, index) => (
+                        {MenuItemsContent.map((item, index) => (
                             <li key={`${item}-${item.id}`}>
                                 <Link
                                     className="relative w-full before:content-normal before:absolute before:-bottom-3 before:h-[3px] transition duration-1000 before:transition-all before:duration-1000 before:left-0 before:bg-primary-300 before:w-0 before:block hover:before:w-full"
                                     color={
-                                        index === 2 ? "warning" : index === menuItems.length - 1 ? "danger" : "foreground"
+                                        index === 2 ? "warning" : index === MenuItemsContent.length - 1 ? "danger" : "foreground"
                                     }
                                     href={`${item.route}`}
 
@@ -117,12 +117,12 @@ const Header = () => {
                     </button>
                 </div>
                 <ul>
-                    {menuItems.map((item, index) => (
+                    {MenuItemsContent.map((item, index) => (
                         <li className="p-[10px] my-4" key={`${item}-${item.id}`}>
                             <Link
                                 className="w-full"
                                 color={
-                                    index === 2 ? "warning" : index === menuItems.length - 1 ? "danger" : "foreground"
+                                    index === 2 ? "warning" : index === MenuItemsContent.length - 1 ? "danger" : "foreground"
                                 }
                                 href={`${item.route}`}
 

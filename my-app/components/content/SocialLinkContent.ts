@@ -1,5 +1,5 @@
-import type { TMenuItemsType } from "@/types";
-const socialLink: TSocialLink[] = [
+import type { TSocialItems } from "@/types";
+const SocialLinkContent: TSocialItems[] = [
     { id:1,name: "Twitter", route: "/twitter" },
     { id:2,name: "Instagram", route: "/Instagram" },
     { id:3,name: "Telegram", route: "/telegram" },
@@ -7,4 +7,4 @@ const socialLink: TSocialLink[] = [
 ];
 
 
-export default socialLink
+export default SocialLinkContent
