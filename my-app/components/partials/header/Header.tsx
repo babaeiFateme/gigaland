@@ -36,7 +36,7 @@ const Header = () => {
             // Request account access if needed
             await window.ethereum.request({ method: 'eth_requestAccounts' });
             const accounts = await web3.eth.getAccounts();
-            console.log(accounts);
+            console.log(accounts[0]);
             setWalletAddress(accounts[0]);
 
             // Listen for account changes

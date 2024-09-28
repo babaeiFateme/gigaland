@@ -7,8 +7,8 @@ import Header from "@/components/partials/header/Header";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Rayka",
-  description: "Rayka site",
+  title: "giga",
+  description: "giga site",
 };
 
 export default function RootLayout({

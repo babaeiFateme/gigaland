@@ -19,8 +19,26 @@ import author1 from "@/public/images/landing/author/author-9.jpg"
 import author2 from "@/public/images/landing/author/author-11.jpg"
 import { motion } from "framer-motion"
 import { HiCheckCircle } from 'react-icons/hi';
+import { useEffect, useState } from 'react';
 
 const TradingNtfs = () => {
+    const [trendingNFTs, setTrendingNFTs] = useState([]);
+    const [loading, setLoading] = useState(true);
+    useEffect(() => {
+        const fetchTrendingNFTs = async () => {
+            try {
+                const response = await fetch('https://api.coingecko.com/api/v3/nfts/list');
+                const data = await response.json();
+                setTrendingNFTs(data.slice(0, 10));
+            } catch (error) {
+                console.error('Error fetching trending NFTs:', error);
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        fetchTrendingNFTs();
+    }, []);
     return (
         <div className='h-full w-full my-[30px] trading-ntfs'>
             <h2 className="text-white font-bold text-xl my-[40px]">Trending NFTs</h2>
@@ -49,50 +67,53 @@ const TradingNtfs = () => {
                 loop={true}
 
             >
-                <SwiperSlide className='h-full'>
-                    <div className=' pt-10 pb-4 px-4 bg-primary-950 rounded-xl relative'>
-                        <motion.div className="group rounded-2xl"
-                            whileHover={{ scale: 1.08 }}
-                            whileTap={{ scale: 1.05 }}
-                            transition={{ duration: 1 }}
-                        >
-                            <Image
-                                className="block aspect-[1.2] rounded-2xl object-cover transform transition-transform "
-                                src={trade1}
-                                width={800}
-                                height={800}
-                                alt=""
-                            />
-                        </motion.div>
-                        <div className='absolute top-4 left-3 rounded-full group btn-gradient'>
-                            <Image className='rounded-full transition-all duration-1000 ease-in-out group-hover:p-1' src={author2} width={50} height={50} alt='author' />
-                            <HiCheckCircle className="absolute bottom-0 right-0 text-primary-400 text-xl" />
+                {trendingNFTs.map((nft) => (
 
-                        </div>
-                        <div className='my-3'>
-                            <div className='flex gap-2 items-center justify-between mb-2'>
-                                <h3 className='text-white text-sm'>Superpious sfs</h3>
-                                <div className='text-white text-xl'>
-                                    ...
+                    <SwiperSlide key={nft.id} className='h-full'>
+                        <div className=' pt-10 pb-4 px-4 bg-primary-950 rounded-xl relative'>
+                            <motion.div className="group rounded-2xl"
+                                whileHover={{ scale: 1.08 }}
+                                whileTap={{ scale: 1.05 }}
+                                transition={{ duration: 1 }}
+                            >
+                                <Image
+                                    className="block aspect-[1.2] rounded-2xl object-cover transform transition-transform "
+                                    src={trade1}
+                                    width={800}
+                                    height={800}
+                                    alt=""
+                                />
+                            </motion.div>
+                            <div className='absolute top-4 left-3 rounded-full group btn-gradient'>
+                                <Image className='rounded-full transition-all duration-1000 ease-in-out group-hover:p-1' src={author2} width={50} height={50} alt='author' />
+                                <HiCheckCircle className="absolute bottom-0 right-0 text-primary-400 text-xl" />
+
+                            </div>
+                            <div className='my-3'>
+                                <div className='flex gap-2 items-center justify-between mb-2'>
+                                    <h3 className='text-white text-sm'>{nft.name}</h3>
+                                    <div className='text-white text-xl'>
+                                        ...
+                                    </div>
+                                </div>
+                                <div className='flex gap-2 items-center justify-between'>
+                                    <div>
+                                        {/* <span className='text-gray-600 mr-1 text-sm font-semibold'>
+                                            Current Price: {nft.last_sale ? `${nft.last_sale.total_price / 1e18} ETH` : 'Not Available'}
+                                        </span> */}
+                                        <span className='text-white text-sm font-semibold'>1/20</span>
+                                    </div>
+                                    <div className='flex gap-1 items-center'>
+                                        <TiHeartFullOutline className='text-lg text-primary-400' />
+                                        <span className='text-sm text-white'>20</span>
+                                    </div>
                                 </div>
                             </div>
-                            <div className='flex gap-2 items-center justify-between'>
-                                <div>
-                                    <span className='text-gray-600 mr-1 text-sm font-semibold'>
-                                        0.06 ETH
-                                    </span>
-                                    <span className='text-white text-sm font-semibold'>1/20</span>
-                                </div>
-                                <div className='flex gap-1 items-center'>
-                                    <TiHeartFullOutline className='text-lg text-primary-400' />
-                                    <span className='text-sm text-white'>20</span>
-                                </div>
-                            </div>
-                        </div>
 
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide className='h-full'>
+                        </div>
+                    </SwiperSlide>
+                ))}
+                {/* <SwiperSlide className='h-full'>
                     <div className=' pt-10 pb-4 px-4 bg-primary-950 rounded-xl relative'>
                         <motion.div className="group rounded-2xl"
                             whileHover={{ scale: 1.08 }}
@@ -303,7 +324,7 @@ const TradingNtfs = () => {
                         </div>
 
                     </div>
-                </SwiperSlide>
+                </SwiperSlide> */}
 
             </Swiper>
         </div >
